@@ -643,8 +643,13 @@ const HomePage = () => {
                 className="bg-white rounded-xl p-6 shadow-sm border-2 border-yellow-200"
               >
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <BookOpen className="h-6 w-6 text-yellow-600" />
+                  <div className="w-full h-52 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto mb-4 overflow-hidden">
+                    <img
+                      src={bonus.cover_image || "/placeholder-book.png"}
+                      alt={bonus.title}
+                      className="w-full h-full object-[fit]"
+                      loading="lazy"
+                    />
                   </div>
                   <h4 className="font-semibold text-gray-900 mb-2">
                     {bonus.title}
