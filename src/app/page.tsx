@@ -377,16 +377,9 @@ const HomePage = () => {
             {/* Right Content - eBook Preview */}
             <div className="relative">
               <div className="bg-gradient-to-br from-green-50 to-orange-50 rounded-3xl p-8">
-                <div className="text-center mb-6">
-                  <span className="inline-flex items-center bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">
-                    <Eye className="h-4 w-4 mr-2" />
-                    Preview Daftar Isi
-                  </span>
-                </div>
-
                 <div className="relative max-w-sm mx-auto">
                   <img
-                    src={featuredBooks?.preview_images?.[0]}
+                    src={featuredBooks?.cover_image}
                     alt="Preview eBook"
                     className="w-full h-auto rounded-2xl shadow-lg"
                     loading="lazy"
